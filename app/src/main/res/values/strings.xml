@@ -3,4 +3,6 @@
     <string name="main_instructions">Instrukcja</string>
     <string name="main_closest">Najblizsze rzeczy</string>
     <string name="main_phone">Zadzwon</string>
+    <string name="current_gps_loaction">Current GPS Loaction</string>
+    <string name="call_text">Zadzwoń 112</string>
 </resources>
