@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="big_space">150dp</dimen>
+    <dimen name="big_space">100dp</dimen>
     <dimen name="margin">30dp</dimen>
+    <dimen name="space_button">16dp</dimen>
+    <dimen name="space_small">6dp</dimen>
 </resources>

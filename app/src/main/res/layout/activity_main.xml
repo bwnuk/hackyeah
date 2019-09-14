@@ -6,58 +6,174 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:background="@color/background"
+    tools:context=".ui.MainActivity">
     
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_space"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_car_accident"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
     <Space
         android:layout_width="match_parent"
-        android:layout_height="@dimen/big_space" />
-    
+        android:layout_height="@dimen/margin" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:padding="@dimen/space_small">
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/button_tutorial"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="2"
             android:layout_gravity="center"
             android:background="@drawable/rounded_shape_button"
-            android:text="@string/main_instructions"
-            android:textColor="@color/colorAccent"/>
+            android:padding="@dimen/space_button"
+            android:text="@string/main_tutorial"
+            android:textColor="@color/colorSecond"
+            app:backgroundTint="@color/white"
+            android:elevation="20dp"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_quiz"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_shape_button"
+            android:padding="@dimen/space_button"
+            android:text="@string/main_quiz"
+            android:textColor="@color/colorSecond"
+            app:backgroundTint="@color/white"
+            android:elevation="20dp"/>
     </LinearLayout>
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="@dimen/big_space" />
+        android:layout_height="@dimen/margin" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:padding="@dimen/space_small">
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/button_safe"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="2"
             android:layout_gravity="center"
             android:background="@drawable/rounded_shape_button"
-            android:text="@string/main_closest"
-            android:textColor="@color/colorAccent"/>
-    </LinearLayout>    <Space
+            android:padding="@dimen/space_button"
+            android:text="@string/main_safe_position"
+            android:textColor="@color/colorSecond"
+            app:backgroundTint="@color/white"
+            android:elevation="20dp"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_closest"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_shape_button"
+            android:padding="@dimen/space_button"
+            android:text="@string/main_quiz"
+            android:textColor="@color/colorSecond"
+            app:backgroundTint="@color/white"
+            android:elevation="20dp"/>
+    </LinearLayout>
+
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="@dimen/big_space" />
+        android:layout_height="@dimen/margin" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:padding="@dimen/space_small">
         <Button
-            android:id="@+id/phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/button_cpr"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="2"
             android:layout_gravity="center"
             android:background="@drawable/rounded_shape_button"
-            android:text="@string/main_phone"
+            android:padding="@dimen/space_button"
+            android:text="@string/main_CPR"
+            android:textColor="@color/colorSecond"
+            app:backgroundTint="@color/white"
+            android:elevation="20dp"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_car_service"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_shape_button"
+            android:padding="@dimen/space_button"
+            android:text="@string/main_quiz"
+            android:textColor="@color/colorSecond"
+            app:backgroundTint="@color/white"
+            android:elevation="20dp"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_small">
+        <Button
+            android:id="@+id/button_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_shape_button"
+            android:padding="@dimen/space_button"
+            android:text="@string/main_quiz"
+            app:backgroundTint="@color/colorPrimary"
             android:textColor="@color/colorAccent"/>
     </LinearLayout>
+
 
 </LinearLayout>

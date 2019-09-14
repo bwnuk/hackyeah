@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Hackyeah</string>
-    <string name="main_instructions">Instrukcja</string>
+    <string name="main_tutorial">Tutorial</string>
     <string name="main_closest">Najblizsze rzeczy</string>
     <string name="main_phone">Zadzwon</string>
+    <string name="main_quiz">Sprawdz wiedze</string>
+    <string name="main_car_accident">Pierwsza pomoc</string>
+    <string name="main_safe_position">Pozycja bezpieczna</string>
+    <string name="main_gps">GPS</string>
+    <string name="main_CPR">CPR</string>
+    <string name="main_car_service">Car Service</string>
+    <string name="main_map">Mapa</string>
 </resources>
